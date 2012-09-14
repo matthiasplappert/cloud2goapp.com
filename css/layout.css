@@ -1,0 +1,337 @@
+html, body {
+	background-image: url('../img/background.png');
+	background-repeat: repeat;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: #000 0 -1px 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+#wrapper {
+	width: 776px;
+	margin: 0 auto 20px;
+}
+
+#links {
+	text-align: right;
+	font-size: 13px;
+	height: 50px;
+	text-align: 50px;
+	line-height: 50px;
+	color: #666;
+}
+
+#links a {
+	font-weight: 500;
+	color: #777;
+	margin-left: 10px;
+	padding-left: 16px;
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	height: 15px;
+	line-height: 15px;
+}
+
+#links a:hover {
+	color: #999;
+	background-position: 0 -20px;
+}
+
+#links .presskit {
+	background-image: url('../img/link_presskit.png');
+}
+
+#links .twitter {
+	background-image: url('../img/link_twitter.png');
+}
+
+#links .help {
+	background-image: url('../img/link_help.png');
+}
+
+#iphone {
+	width: 284px;
+	height: 561px;
+	min-height: 561px; /* used in player.js */
+	max-height: 703px; /* used in player.js */
+	float: left;
+	margin: 0 70px 0 0;
+	background-image: url('../img/iphone.png');
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#iphone object, #iphone video, #iphone .play {
+	margin: 100px 0 122px 21px;
+	display: block;
+	width: 242px;
+	height: 362px;
+}
+
+#iphone object, #iphone video {
+	display: none;
+}
+
+#iphone .navigator {
+    width: 261px;
+    margin: 0 auto;
+}
+
+#iphone .navigator li {
+    float: left;
+    margin: 0 10px;
+}
+
+#iphone .navigator li a {
+    display: block;
+    width: 9px;
+    height: 9px;
+    background: url('../img/dots.png') no-repeat 0 -9px;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+#iphone .navigator li a:active {
+    margin: 1px 0 0;
+}
+
+#iphone .navigator li.active a {
+    background-position: 0 0;
+    margin: 0;
+    opacity: 1.0;
+}
+
+#iphone .navigator li.active a:active {
+    background-position: 0 0;
+}
+
+#iphone .navigator li a:hover {
+    opacity: 1.0;
+}
+
+#iphone .navigator li a span {
+	display: none;
+}
+
+#iphone .infobox {
+	clear: both;
+    background: url('../img/infobox-arrow.png') no-repeat 13px 0;
+    margin: 5px 0 0;
+    padding: 11px 0 0;
+    height: 85px;
+    overflow: hidden;
+}
+
+#iphone .infobox div.inner {
+    padding: 10px;
+    max-height: 60px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    background-color: #929292;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: #000 0 1px 0;
+    box-shadow: #444 0 1px 1px;
+    -webkit-box-shadow: #444 0 1px 1px;
+    -moz-box-shadow: #444 0 1px 1px;
+    -o-box-shadow: #444 0 1px 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+#content {
+	width: 422px;
+	float: left;
+	color: #fff;
+}
+
+#header {
+	height: 137px;
+	margin: 0 0 16px -9px;
+	padding: 5px 0 0 158px;
+	background-image: url('../img/icon.png');
+	background-repeat: no-repeat;
+}
+
+#footer {
+	padding-top: 10px;
+	font-size: 13px;
+	color: #666;
+	line-height: 18px;
+	clear: both;
+	text-shadow: #222 0 -1px 0;
+}
+
+#footer a {
+	font-weight: 500;
+	color: #777;
+}
+
+#footer a:hover {
+	color: #999;
+}
+
+#footer p {
+	margin: 8px 0;
+}
+
+#notify_form {
+	width: 300px;
+}
+
+#notify_form_email, #notify_form_button {
+	border: none;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-size: 14px;
+}
+
+#notify_form_email {
+	padding: 5px;
+	width: 208px;
+	float: left;
+	background-image: url('../img/notify_textfield.png');
+	background-repeat: repeat-x;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-right: none;
+	color: #333;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+}
+
+input.placeholder {
+	color: #ccc !important;
+}
+
+#notify_form_button {
+	width: 81px;
+	height: 29px;
+	float: right;
+	color: #fff;
+	text-align: center;
+	text-shadow: #555 0 -1px 0;
+	background: none;
+	background-image: url('../img/notify_button.png');
+	background-repeat: no-repeat;
+	line-height: 29px;
+	opacity: 0.9;
+}
+
+#notify_form_button:hover {
+	opacity: 1.0;
+}
+
+#notify_form_button:active {
+	line-height: 32px;
+}
+
+#notify_form p {
+	display: block;
+	clear: both;
+	margin-top: 10px;
+	font-size: 12px;
+	text-shadow: none;
+	color: #666;
+	text-align: center;
+}
+
+#notify_error {
+    font-size: 14px;
+    text-shadow: none;
+    padding: 10px;
+    display: none;
+    text-align: center;
+    color: #d90000;
+}
+
+h1 {
+	font-size: 58px;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 21px;
+	color: #b4b4b4;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+#content ul {
+	padding: 0 0 0 18px;
+	margin-bottom: 25px;
+	color: #bbb;
+}
+
+#content ul li {
+	list-style: disc outside;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 3px 0;
+}
+
+.button {
+	display: block;
+	width: 139px;
+	height: 88px;
+	margin: 0 -9px;
+	padding: 13px 21px 0 58px;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 24px;
+	color: #fff;
+	text-shadow: #555 0 -1px 0;
+	font-weight: 500;
+}
+
+a.button:hover {
+	opacity: 1.0;
+}
+
+.button:active {
+	margin-top: 1px;
+}
+
+.button strong {
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.button.notify {
+	background-image: url('../img/button_notify.png');
+	margin-right: 13px;
+}
+
+.button.appstore {
+	background-image: url('../img/button_appstore.png');
+	margin-right: 13px;
+}
+
+.button.twitter {
+	background-image: url('../img/button_twitter.png');
+}
+
+/* Fancybox adjustments */
+#fancybox-outer {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Utility */
+br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0; }
